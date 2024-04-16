@@ -20,3 +20,10 @@ html,
 body {
   background-color: #fefded;
 }
+
+.letter-img {
+  /* No spread drop shadow with red color */
+  filter: drop-shadow(0.8rem 0.8rem #fa7070);
+  /* A little bit of rotation */
+  transform: rotate(-2deg);
+}

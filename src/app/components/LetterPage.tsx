@@ -11,16 +11,17 @@ function Row({ children }: { children: React.ReactNode }) {
 
 export function LetterPage({ name, data }: { name: string; data: Data[] }) {
   return (
-    <div className="text-white text-center text-6xl mt-16">
-      <div className="text-theme-orange">Farewell Letters</div>
-      <div className="text-white text-4xl">To. {name}</div>
+    <div className="text-white text-center text-6xl mt-32">
+      <div className="text-theme-pink mx-8">Farewell Letters</div>
+      <div className="text-theme-pink text-4xl mt-2">To. {name}</div>
 
-      <div className="mt-16 flex flex-col">
+      <div className="mt-32 flex flex-col">
         {data.map((letter, idx) => {
           return (
             <Row key={idx}>
               <Letter
                 key={idx}
+                image={letter.image}
                 hasMarginTop={idx !== 0}
                 letter={letter.letter}
                 sender={letter.sender}

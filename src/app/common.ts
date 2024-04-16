@@ -1,5 +1,9 @@
+import { type StaticImageData } from 'next/image'
+
 export interface Data {
   letter: string
-  image?: string
+  image?: {
+    static: StaticImageData
+  }
   sender: string
 }

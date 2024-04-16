@@ -1,5 +1,8 @@
 import { Data } from '@/app/common'
 
+import jinah1 from './images/jinah_1.jpg'
+import jinah2 from './images/jinah_2.jpg'
+
 export const data: Data[] = [
   {
     sender: '이승현',
@@ -48,5 +51,8 @@ export const data: Data[] = [
 여러모로 많은 부분을 도와주셔서 감사합니다.
 저는 정수님이 우직한 나무 같은 분 같아요!
 항상 바르고 우직한 정수님 감사했고 앞으로도 좋은 땅을 지반으로 행복하신 일만 가득하시길 바랍니다! 응원할게요!`,
+    image: {
+      static: jinah1,
+    },
   },
 ]
