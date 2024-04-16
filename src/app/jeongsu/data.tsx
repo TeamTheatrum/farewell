@@ -1,11 +1,8 @@
 import { LetterData, PhotoData } from '@/app/common'
 
-import jinah1 from '../images/jinah_1.jpg'
-import jinah2 from '../images/jinah_2.jpg'
-import minseo1 from '../images/minseo_1.jpg'
-import minseo2 from '../images/minseo_2.jpg'
-import minseo3 from '../images/minseo_3.jpg'
-import jinjae1 from '../images/jinjae_1.jpeg'
+import jinah1 from '../images/common/jinah_1.jpg'
+import { commonImages } from '@/app/images/common'
+import { jeongsuImages } from '@/app/images/jeongsu'
 
 export const letters: LetterData[] = [
   {
@@ -184,12 +181,8 @@ export const letters: LetterData[] = [
   },
 ]
 
-export const photos: PhotoData[] = [
-  jinah2,
-  minseo1,
-  minseo2,
-  minseo3,
-  jinjae1,
-].map((staticImage) => ({ static: staticImage }))
+export const photos: PhotoData[] = [...jeongsuImages, ...commonImages].map(
+  (staticImage) => ({ static: staticImage })
+)
 
 export { histories } from '../images/history/jeongsu'

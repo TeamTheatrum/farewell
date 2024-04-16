@@ -1,4 +1,6 @@
 import { LetterData, PhotoData } from '@/app/common'
+import { commonImages } from '@/app/images/common'
+import { yunaImages } from '@/app/images/yuna'
 
 export const letters: LetterData[] = [
   {
@@ -156,6 +158,8 @@ export const letters: LetterData[] = [
   },
 ]
 
-export const photos: PhotoData[] = []
+export const photos: PhotoData[] = [...yunaImages, ...commonImages].map(
+  (staticImage) => ({ static: staticImage })
+)
 
 export { histories } from '../images/history/yuna'
