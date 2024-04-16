@@ -156,6 +156,11 @@ export const letters: LetterData[] = [
 
 승민 올림.`,
   },
+
+  {
+    sender: '편집자',
+    letter: '(금요일에 공개됩니다.)',
+  },
 ]
 
 export const photos: PhotoData[] = [...yunaImages, ...commonImages].map(

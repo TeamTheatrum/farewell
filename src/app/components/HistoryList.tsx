@@ -14,12 +14,14 @@ export function HistoryList({ histories }: { histories: HistoryData[] }) {
               index !== 0 && 'mt-16'
             )}
           >
-            <Image
-              src={history.image}
-              alt={history.name}
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="sm:rounded-lg h-80 sm:h-96 sm:w-96 object-cover w-full"
-            />
+            <a target="_blank" href={history.image.src}>
+              <Image
+                src={history.image}
+                alt={history.name}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="sm:rounded-lg h-80 sm:h-96 sm:w-96 object-cover w-full"
+              />
+            </a>
             <div className="flex flex-col items-start ml-4 sm:ml-0">
               <div className="text-2xl sm:text-3xl mt-4 sm:mt-0 text-left text-black">
                 {history.name}
