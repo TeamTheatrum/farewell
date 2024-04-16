@@ -1,4 +1,4 @@
-import { Data } from '@/app/common'
+import { LetterData } from '@/app/common'
 import cx from 'classnames'
 import Image from 'next/image'
 
@@ -7,7 +7,7 @@ export function Letter({
   letter,
   image,
   hasMarginTop,
-}: Data & {
+}: LetterData & {
   hasMarginTop?: boolean
 }) {
   return (

@@ -1,9 +1,13 @@
-import { Data } from '@/app/common'
+import { LetterData, PhotoData } from '@/app/common'
 
-import jinah1 from './images/jinah_1.jpg'
-import jinah2 from './images/jinah_2.jpg'
+import jinah1 from '../images/jinah_1.jpg'
+import jinah2 from '../images/jinah_2.jpg'
+import minseo1 from '../images/minseo_1.jpg'
+import minseo2 from '../images/minseo_2.jpg'
+import minseo3 from '../images/minseo_3.jpg'
+import jinjae1 from '../images/jinjae_1.jpeg'
 
-export const data: Data[] = [
+export const letters: LetterData[] = [
   {
     sender: '이승현',
     letter: `때로는 정답과 무관해도 지금 열의를 쏟고 있는 무언가로부터 보람을 얻을 수 있다고 믿는데요, 이것을 정수님 덕분에 많이 느끼고 배웠습니다. 항상 같은 자리에 계실 것만 같아서 더 아쉬운 마음인 것 같아요.
@@ -56,3 +60,11 @@ export const data: Data[] = [
     },
   },
 ]
+
+export const photos: PhotoData[] = [
+  jinah2,
+  minseo1,
+  minseo2,
+  minseo3,
+  jinjae1,
+].map((staticImage) => ({ static: staticImage }))

@@ -1,5 +1,6 @@
-import { Data } from '@/app/common'
+import { LetterData, PhotoData } from '@/app/common'
 import { Letter } from '@/app/components/Letter'
+import { PhotoList } from '@/app/components/PhotoList'
 
 function Row({ children }: { children: React.ReactNode }) {
   return (
@@ -9,14 +10,21 @@ function Row({ children }: { children: React.ReactNode }) {
   )
 }
 
-export function LetterPage({ name, data }: { name: string; data: Data[] }) {
+export function LetterPage({
+  name,
+  letters,
+  photos,
+}: {
+  name: string
+  letters: LetterData[]
+  photos: PhotoData[]
+}) {
   return (
-    <div className="text-white text-center text-6xl mt-32">
-      <div className="text-theme-pink mx-8">Farewell Letters</div>
+    <div className="text-white text-center mt-32">
+      <div className="text-theme-pink mx-8 text-6xl">Farewell Letters</div>
       <div className="text-theme-pink text-4xl mt-2">To. {name}</div>
-
       <div className="mt-32 flex flex-col">
-        {data.map((letter, idx) => {
+        {letters.map((letter, idx) => {
           return (
             <Row key={idx}>
               <Letter
@@ -30,6 +38,11 @@ export function LetterPage({ name, data }: { name: string; data: Data[] }) {
           )
         })}
       </div>
+
+      <div className="text-theme-pink mx-8 pt-64 pb-32 text-4xl">
+        Our Memories
+      </div>
+      <PhotoList photos={photos} />
     </div>
   )
 }
