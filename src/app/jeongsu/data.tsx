@@ -68,3 +68,5 @@ export const photos: PhotoData[] = [
   minseo3,
   jinjae1,
 ].map((staticImage) => ({ static: staticImage }))
+
+export { histories } from '../images/history/jeongsu'

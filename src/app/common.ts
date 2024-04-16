@@ -11,3 +11,10 @@ export interface LetterData {
 export interface PhotoData {
   static: StaticImageData
 }
+
+export interface HistoryData {
+  name: string
+  year: number
+  month: number
+  image: StaticImageData
+}
