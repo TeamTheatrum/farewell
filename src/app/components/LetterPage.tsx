@@ -52,6 +52,12 @@ export function LetterPage({
         Our Memories
       </div>
       <PhotoList photos={photos} />
+
+      <div className="text-black text-lg pt-24 pb-24 text-center px-16 whitespace-pre-wrap">
+        {`그동안의 노고에 깊은 감사의 말씀을 드리며,
+앞으로 더욱 행복한 일만 가득하시길 바랍니다.
+Farewell!`}
+      </div>
     </div>
   )
 }
