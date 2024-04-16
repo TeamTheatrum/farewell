@@ -14,6 +14,12 @@ const config: Config = {
         'theme-maroon': '#872341',
         'theme-black': '#22092C',
         'theme-orange': '#F05941',
+
+        // https://colorhunt.co/palette/fa7070fefdedc6ebc5a1c398
+        'theme-off-white': '#FEFDED',
+        'theme-sage': '#A1C398',
+        'theme-green': '#C6EBC5',
+        'theme-pink': '#FA7070',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

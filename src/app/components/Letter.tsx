@@ -12,11 +12,14 @@ export function Letter({
   return (
     <div
       className={cx(
-        `text-xl text-left whitespace-pre-wrap ${hasMarginTop && 'mt-16'}`
+        `text-xl text-left whitespace-pre-wrap bg-white px-12 py-12 ${
+          hasMarginTop && 'mt-32'
+        }`
       )}
       key={sender}
     >
-      {letter}
+      <div className="text-black">{letter}</div>
+      <div className="text-lg text-gray-800 text-right mt-8">{sender}</div>
     </div>
   )
 }
