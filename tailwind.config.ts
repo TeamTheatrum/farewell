@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        // https://colorhunt.co/palette/22092c872341be3144f05941
+        'theme-red': '#BE3144',
+        'theme-maroon': '#872341',
+        'theme-black': '#22092C',
+        'theme-orange': '#F05941',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

@@ -1,3 +1,6 @@
+import { data } from '@/app/jeongsu/data'
+import { LetterPage } from '@/app/components/LetterPage'
+
 export default function Page() {
-  return <div className="text-white">Farewell Letters</div>
+  return <LetterPage name="Jeongsu" data={data} />
 }
