@@ -3,6 +3,7 @@ import { LetterData, PhotoData } from '@/app/common'
 import jinah1 from '../images/common/jinah_1.jpg'
 import { commonImages } from '@/app/images/common'
 import { jeongsuImages } from '@/app/images/jeongsu'
+import { fourCutImages } from '../images/four_cut'
 
 export const letters: LetterData[] = [
   {
@@ -186,8 +187,10 @@ export const letters: LetterData[] = [
   },
 ]
 
-export const photos: PhotoData[] = [...jeongsuImages, ...commonImages].map(
-  (staticImage) => ({ static: staticImage })
-)
+export const photos: PhotoData[] = [
+  ...jeongsuImages,
+  ...commonImages,
+  ...fourCutImages,
+].map((staticImage) => ({ static: staticImage }))
 
 export { histories } from '../images/history/jeongsu'
